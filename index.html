@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h3>Publisher</h3>
+    <form>
+      <select name="payloads">
+        <option value="AccountCreated">AccountCreated</option>
+        <option value="AccountPasswordChangeRequest">AccountPasswordChangeRequest</option>
+        <option value="ApplicationSubmitted">ApplicationSubmitted</option>
+        <option value="ApplicationAccepted">ApplicationAccepted</option>
+      </select>
+      <button id="submit">Submit</button>
+    </form>
+    <br>
+    <div id="displayPayload">
+
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Subscriber</h3>
+    <form>
+      <select name="payloads">
+        <option value="AccountCreated">AccountCreated</option>
+        <option value="AccountPasswordChangeRequest">AccountPasswordChangeRequest</option>
+        <option value="ApplicationSubmitted">ApplicationSubmitted</option>
+        <option value="ApplicationAccepted">ApplicationAccepted</option>
+      </select>
+      <button id="submit">Submit</button>
+    </form>
+    <br>
+    <div id="displayPayload">
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="PubSubGUI.js"></script>
+</body>
+
+</html>
